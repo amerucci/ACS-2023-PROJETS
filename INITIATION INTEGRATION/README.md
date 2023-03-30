@@ -6,4 +6,4 @@ https://www.figma.com/file/gNWQISmvmPa0xjE95GrZnT/Initiation-int%C3%A9gration-HT
 
 ## LiveCoding correction
 
-https://www.youtube.com/watch?v=rOn0C99m_VM
+https://youtu.be/i_FHG1YMVUU
