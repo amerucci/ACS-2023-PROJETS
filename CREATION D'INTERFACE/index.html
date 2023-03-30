@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Le piano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<header>
+    <div class="logo">
+        <a href="./">
+            <img src="./images/logo.png" alt="">
+        </a>
+       
+    </div>
+    <nav class="nav">
+        <a href="#" class="active translateItem">Accueil</a>
+        <a href="#" class="translateItem">Découvrir</a>
+        <a href="#" class="translateItem">Boutique</a>
+        <a href="#" class="translateItem">Contact</a>
+    </nav>
+
+
+    <div class="hamburger-menu">
+        <div id="bar1" class="bar-top"></div>
+        <div id="bar2" class="bar-middle"></div>
+        <div id="bar3" class="bar-bottom"></div>
+      </div>
+    
+    <div class="account">
+        <a href="#">S'inscrire</a>
+        <a href="#" class="connection">
+            <span class="c01">Se connecter</span>
+            <span class="c02">Se connecter</span>
+        </a>
+    </div>
+</header>
+<main>
+    <div class="left">
+        <h2 class="lepiano"><span>Le Piano</span></h2>
+        <h1><span>Un instrument</span></h1><h1> <span class="yellow">polyphonique</span></h1>
+        <div class="accroche">
+            Il existe également des pianos numériques, qui ne possèdent pas de cordes.
+        </div>
+        <div class="actions">
+            <a href="#" class="discover"><span>Découvrir tous les pianos</span></a>
+            <a href="#" class="listen"><span>Ecouter</span> 
+                <span class="listen-icon">
+                    <span class="play"><img src="./images/listen-white.svg" alt=""></span>
+                </span></a>
+        </div>
+    </div>
+    <div class="right">
+        <div class="searchBar">
+            <input type="text" name="search" id="search" class="search" placeholder="Rechercher un piano...">
+            <input type="image" id="searBtn" alt="Rechercher"
+       src="./images/google.svg" >
+        </div>
+        <div class="mask1">
+          
+            <div class="mySlides enter" id="slide1" slideid="1" style="z-index: 2">
+           
+                <img src="./images/piano01.jpeg" >
+              </div>
+            
+              <div class="mySlides " id="slide2" slideid="2" style="opacity:0">
+                <img src="./images/piano02.jpg">
+              </div>
+            
+              <div class="mySlides" id="slide3" slideid="3" style="opacity:0">
+                <img src="./images/piano03.jpg" >
+              </div>
+
+            
+            </div>
+            <a class="prev" >&#10094;</a>
+            <a class="next" >&#10095;</a>
+    </div>
+
+</main>
+<footer>
+    <div class="contact">
+        <div class="contactImg">
+            <img src="./images/contact.jpg" alt="Nos conseillers">
+        </div>
+        <div class="contactInfos">
+            <span>Une question?</span>
+            <span>Nos experts vous répondent </span>
+        </div>
+
+    </div>
+    <div class="socials">
+       <a href="#">Facebook</a> / <a href="#">Linkedin</a> / <a href="#">Instagram</a>
+    </div>
+</footer>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
