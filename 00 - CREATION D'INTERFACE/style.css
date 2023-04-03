@@ -719,7 +719,9 @@ footer {
 
   .left,
   .right {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .left{
@@ -942,4 +944,74 @@ footer {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
 }
+
+footer {
+  width: 90%;
+}
+
+.account{
+  margin-top:20px;
+}
+
+}
+
+@media (max-width:480px){
+  .actions{
+    flex-direction: column;
+  }
+
+  .actions a{
+    margin-bottom:20px;
+  }
+
+  .account {
+    flex-direction: column;
+    margin: 0;
+}
+
+.account a{
+  margin: 0;
+  margin-top: 20px;
+}
+
+.searchBar {
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+  /* display: flex; */
+  right: initial;
+  top: initial;
+}
+
+.mask1{
+  height:400px;
+}
+
+.mask1 img {
+  width: 99%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.prev{
+  top:100px;
+}
+
+footer{
+  flex-direction: column;
+}
+
+.contact{
+  flex-direction: column;
+}
+
+.contactInfos{
+  text-align: center;
+}
+
+.socials {
+  margin: 0;
+  margin-top: 20px;
+}
+
 }
