@@ -14,4 +14,4 @@ https://sass-lang.com/
 
 ## Run compiler
 
-sass --watch style.scss style.css 
+sass --watch style.scss style.css
