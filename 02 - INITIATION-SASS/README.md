@@ -10,7 +10,7 @@ https://sass-lang.com/
 
 ## Installation
 
-1 - npm install -g sass
+npm install -g sass
 
 ## Run compiler
 
