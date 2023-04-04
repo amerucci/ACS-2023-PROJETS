@@ -7,3 +7,11 @@ https://www.figma.com/file/7frtGwXboEoiYkpa4VS2lL/Initiation-pr%C3%A9-processeur
 ## Documentation
 
 https://sass-lang.com/
+
+## Installation
+
+1 - npm install -g sass
+
+## Run compiler
+
+sass --watch style.scss style.css
