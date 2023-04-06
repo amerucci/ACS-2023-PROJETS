@@ -1,3 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
 
+.container-fluid {
+  width: 98%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .menu {
+  width: 30px;
+  height: 20px;
+  display: block;
+  position: relative;
+}
+.header .menu .bar {
+  width: 30px;
+  height: 2px;
+  background: #1c1c1c;
+  display: block;
+}
+.header .menu span {
+  position: absolute;
+}
+.header .menu span:nth-child(1) {
+  top: 0;
+}
+.header .menu span:nth-child(2) {
+  width: 15px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.header .menu span:nth-child(3) {
+  bottom: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
