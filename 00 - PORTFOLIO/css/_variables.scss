@@ -1,7 +1,6 @@
-$brown:#2E0E04;
-$pink:#FFDDE2;
-$green:#B3DEC1;
 $black:#1c1c1c;
+$red:#DB162F;
+$green:#B3DEC1;
 $white:#fff;
 
 %title{
@@ -10,10 +9,12 @@ $white:#fff;
     line-height: 0.9em;
     text-transform:uppercase;
     letter-spacing: -0.5vw;
+    margin:0;
+    padding:0;
 }
 
 %textStroke{
-    -webkit-text-stroke: 2px $brown;
+    -webkit-text-stroke: 2px $white;
     color: transparent;
 }
 

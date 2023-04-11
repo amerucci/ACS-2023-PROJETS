@@ -1,0 +1,142 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+    h1 {
+        @extend %title;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+
+        span {
+            display: inline-block;
+            animation: textanimation 1s backwards;
+            -webkit-animation: textanimation 1s backwards;
+        }
+
+        .stroke {
+            @extend %textStroke;
+        }
+
+        &:nth-child(1) {
+            span {
+                animation-delay: 0.4s;
+            }
+        }
+
+        &:nth-child(2) {
+            span {
+                animation-delay: 0.6s;
+            }
+        }
+
+        &:nth-child(3) {
+            span {
+                animation-delay: 0.8s;
+
+                &:nth-child(2) {
+                    animation-delay: 1s;
+                    color: $red;
+                    margin-left: 10px;
+                }
+            }
+
+        }
+
+    }
+
+    .keepintouch {
+        position: absolute;
+        right: 40px;
+        transform-origin: right;
+        transform: rotate(270deg);
+        display: flex;
+        align-items: center;
+        -webkit-transform: rotate(270deg) translateX(calc(100% + 250px));
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        bottom: 0;
+        &::before{
+            content:'';
+            width: 250px;
+            height: 2px;
+            background:$white;
+            position: absolute;
+            left:-270px;
+        }
+        a{
+            text-align: center;
+            display: inline-flex;
+             margin: 8px;
+             &:nth-child(1) {
+                margin-left: 20px;
+             }
+            img{
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+}
+        }
+}
+
+    .startTour {
+        border: 1px solid $red;
+        display: block;
+        width: auto !important;
+        padding: 20px;
+        font-size: 18px;
+        color: $red;
+        text-decoration: none;
+        margin-top: 20px;
+        max-width: 300px;
+        position: relative;
+        transition: color 0.5s ease-in;
+        -webkit-transition: color 0.5s ease-in;
+        -moz-transition: color 0.5s ease-in;
+        -ms-transition: color 0.5s ease-in;
+        -o-transition: color 0.5s ease-in; 
+        &::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 0;
+            background: $red;
+            top: 0;
+            left: 0;
+            transition: width 0.5s ease-in, color 0.5s ease-in;
+            -webkit-transition: width 0.5s ease-in, color 0.5s ease-in;
+            -moz-transition: width 0.5s ease-in, color 0.5s ease-in;
+            -ms-transition: width 0.5s ease-in, color 0.5s ease-in;
+            -o-transition: width 0.5s ease-in, color 0.5s ease-in;
+}
+
+        &:hover {
+            color: $white;
+
+            &::before {
+                width: 100%;
+                content: '';
+                color: $white;
+            }
+        }
+
+        span{
+            position: relative;
+            z-index: 1;
+        }
+
+    }
+
+
+
+}
