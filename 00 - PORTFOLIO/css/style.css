@@ -1,7 +1,21 @@
+.hero h1 {
+  font-size: 12vw;
+  font-weight: 700;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: -0.5vw;
+}
+
+.hero h1 span {
+  -webkit-text-stroke: 2px #2E0E04;
+  color: transparent;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 .container-fluid {
@@ -12,6 +26,14 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+.header .logo img {
+  height: 50px;
 }
 .header .menu {
   width: 30px;
@@ -43,6 +65,15 @@ body {
 }
 .header .menu span:nth-child(3) {
   bottom: 0;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */
