@@ -1,0 +1,126 @@
+:root {
+  --black: #222222;
+  --red: #d21146;
+  --white: #fff;
+}
+
+/* FONTS */
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+/**********
+ * HEADER *
+ **********/
+body {
+  color: var(--black);
+  font-family: 'Barlow', sans-serif;
+}
+
+header {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.social {
+  background: var(--black);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.logo {
+  height: 67px;
+  width: 67px;
+  background: var(--red);
+  color: var(--white);
+  -webkit-box-shadow: 6px 8px 0px 0px hsl(0, 0%, 100%);
+  box-shadow: 6px 8px 0px 0px hsl(0, 0%, 100%);
+}
+
+.nav-link {
+  margin: 0 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.nav-link::after {
+  position: absolute;
+  bottom: -25px;
+  content: "";
+  height: 5px;
+  width: 0;
+  background: var(--red);
+  left: 50%;
+  transition: width 0.5s, left 0.5s;
+  -webkit-transition: width 0.5s, left 0.5s;
+  -moz-transition: width 0.5s, left 0.5s;
+  -ms-transition: width 0.5s, left 0.5s;
+  -o-transition: width 0.5s, left 0.5s;
+}
+
+.nav-link:hover:after {
+  position: absolute;
+  bottom: -25px;
+  content: "";
+  height: 5px;
+  width: 100%;
+  background: var(--red);
+  left: 0;
+  transition: width 0.5s, left 0.5s;
+}
+
+.social::after {
+    position: absolute;
+    bottom: -25px;
+    content: "";
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: var(--red);
+    transition: width 0.5s, left 0.5s;
+    -webkit-transition: width 0.5s, left 0.5s;
+    -moz-transition: width 0.5s, left 0.5s;
+    -ms-transition: width 0.5s, left 0.5s;
+    -o-transition: width 0.5s, left 0.5s;
+  }
+
+/*************
+ * HERO PART *
+ *************/
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background: url(images/images/alice-dietrich-FwF_fKj5tBo-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero h1 {
+  font-size: 8vw;
+  font-family: "Fraunces", serif;
+  font-weight: initial;
+}
+
+.sdown {
+  bottom: 10%;
+  text-align: center;
+}
+
+.sdown span {
+  font-size: 20px;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+}
+
+.sdown img {
+  width: 64px;
+  height: 64px;
+  filter: invert(1);
+}
