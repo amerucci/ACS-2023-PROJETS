@@ -1,0 +1,38 @@
+#partition {
+    color: $red;
+    z-index: 2;
+    position: relative;
+    background: $black;
+
+    .langages {
+        font-family: 'squealerregular';
+        font-size: 20px;
+        text-transform: uppercase;
+        position: relative;
+        height: 110px;
+
+        .container {
+            overflow-x: hidden;
+            display: flex;
+            width: 100%;
+            position: absolute;
+            top: 5px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+
+            .txt {
+                flex-shrink: 0;
+                font-size: 150px;
+                animation: scrollTxt 40s linear infinite;
+                -webkit-animation: scrollTxt 40s linear infinite;
+            }
+        }
+
+    }
+
+
+
+}

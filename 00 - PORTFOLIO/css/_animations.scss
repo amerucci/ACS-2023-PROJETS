@@ -4,11 +4,11 @@
 
 @keyframes textanimation {
     0% {
-      transform: translateY(105%);
-      -webkit-transform: translateY(105%);
-      -moz-transform: translateY(105%);
-      -ms-transform: translateY(105%);
-      -o-transform: translateY(105%);
+      transform: translateY(150%);
+      -webkit-transform: translateY(150%);
+      -moz-transform: translateY(150%);
+      -ms-transform: translateY(150%);
+      -o-transform: translateY(150%);
 }
     100% {
       transform: translateY(0);
@@ -18,3 +18,21 @@
       -o-transform: translateY(0);
 }
   }
+
+
+/***********
+ * MARQUEE *
+ ***********/
+
+  @keyframes scrollTxt {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%)
+    }
+  }
+
+
+  
+  

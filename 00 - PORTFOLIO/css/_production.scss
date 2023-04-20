@@ -1,0 +1,328 @@
+#production {
+
+    color: $black;
+    overflow: hidden;
+
+    width: 100%;
+    // position: sticky;
+    // position: -webkit-sticky;
+    // align-self: flex-start;
+    // top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: $red;
+
+    h2 {
+        @extend %title;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        font-size: 8vw;
+        text-align: center;
+        color: $white;
+
+        span {
+            display: inline-block;
+            animation: textanimation 1s backwards;
+            -webkit-animation: textanimation 1s backwards;
+        }
+
+        .stroke {
+            @extend %textStroke;
+        }
+
+        &:nth-child(1) {
+            span {
+                animation-delay: 0s;
+            }
+        }
+
+        &:nth-child(2) {
+            span {
+                animation-delay: 0.2s;
+                -webkit-text-stroke: 2px $white;
+            }
+        }
+
+        &:nth-child(3) {
+            span {
+                animation-delay: 0.4s;
+                margin-bottom: 50px;
+
+               
+            }
+
+        }
+
+    }
+
+
+    .container {
+        position: relative;
+        top: 0;
+        left: 0;
+        /*  note vh and vw switched  */
+        width: 100vh;
+        height: 100vw;
+        transform-origin: top left;
+        transform: rotate(-90deg) translateX(-100vh);
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            height: fit-content;
+            transform-origin: center center;
+            transform: rotate(90deg) translateY(-100vh);
+            gap: 50px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+    }
+
+    .child {
+        width: 33vw;
+        height: auto;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        div {
+            width: 100%
+        }
+
+        .img {
+            height: 500px;
+            width: 100%;
+            background: salmon
+        }
+
+        .title {
+            font-family: "squealerregular";
+            font-size: 3vw;
+            color: $red;
+            text-transform: uppercase;
+        }
+
+        .description {
+            width: 100%;
+            line-height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}
+
+.sticky-container {
+    margin-top: 100vh;
+
+
+
+    main {
+        overflow-x: hidden;
+        display: flex;
+        position: sticky;
+        top: 0;
+        gap: 4px;
+        background:$black;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+
+        font-size: 6vw;
+        line-height: 6vw;
+        text-align: center;
+        text-transform: uppercase;
+
+
+
+    }
+
+    section {
+        min-width: 33vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+
+
+        .infos {
+            position: absolute;
+            bottom: 0;
+            display: none;
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+            height: 0;
+
+            .infosTechnos {
+                display: flex;
+                flex-direction: column;
+                line-height: 0;
+            }
+
+            .infosLink {
+                background: $red;
+            }
+
+            span {
+                overflow: hidden;
+                width: 100%;
+                height: 16.67vh;
+
+
+
+
+                span {
+                    display: inline-block;
+                    animation: textanimation .5s backwards;
+                    -webkit-animation: textanimation .5s backwards;
+                    font-size: 11px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    background: $black;
+                    display: flex;
+                    color: transparent;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    font-size: 3.6vw;
+                    font-weight: 900;
+                    /* letter-spacing: 2vw; */
+                    line-height: initial;
+                    text-size-adjust: 80%;
+                    -webkit-text-stroke: 2px $white;
+                    
+
+                    a {
+                        text-decoration: none;
+                        color: transparent;
+                        text-decoration: none;
+
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 3.6vw;
+                        font-weight: 900;
+                        /* letter-spacing: 2vw; */
+                        line-height: initial;
+                        text-size-adjust: 80%;
+                        -webkit-text-stroke: 2px $white;
+                        
+                    }
+                }
+
+                &:nth-child(6) {
+                    span {
+                        animation-delay: 0.2s;
+                        
+                    }
+                }
+
+                &:nth-child(5) {
+                    span {
+                        animation-delay: 0.4s;
+                    }
+                }
+
+                &:nth-child(4) {
+                    span {
+                        animation-delay: 0.6s;
+                    }
+                }
+
+                &:nth-child(3) {
+                    span {
+                        animation-delay: 0.8s;
+                    }
+                }
+
+                &:nth-child(2) {
+                    span {
+                        animation-delay: 1s;
+                    }
+                }
+
+                &:nth-child(1) {
+                    span {
+                        animation-delay: 1.2s;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    section:nth-child(even) h1 {
+
+
+        -webkit-text-stroke: 2px #fff;
+        color: transparent;
+
+    }
+
+
+
+}
+
+.imgProd {
+    position: absolute;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -ms-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+}
+
+
+section:hover .imgProd {
+    height: 100%;
+    width: 100%;
+
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -ms-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+}
+
+section:hover .infos {
+    display: block;
+    height: auto;
+}
+
+
+
