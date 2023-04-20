@@ -16,8 +16,12 @@ window.addEventListener("scroll", function () {
     .querySelector("#about")
     .getBoundingClientRect();
 
+    let positionYfooter = document
+    .querySelector("#footer")
+    .getBoundingClientRect();
 
-console.log(positionYabout.y+positionYabout.height)
+
+
 
   let offset = window.pageYOffset;
   let viewport_height = window.innerHeight;
@@ -41,6 +45,11 @@ if((positionYabout.y+positionYabout.height) <= 0){
         document.body.style='overflow:auto; overflow-x: hidden;';
     }
  
+}
+
+if(positionYfooter.y <= viewport_height){ 
+    document.querySelector('#footerTitle').classList.add("show")
+    document.querySelector('#footer .col-left p').classList.add("show")  
 }
 
 

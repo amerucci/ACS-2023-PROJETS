@@ -610,6 +610,8 @@ footer {
   padding-top: 100px;
   position: relative;
   background: #1c1c1c;
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 footer .col-left {
   width: 50%;
@@ -618,6 +620,9 @@ footer .col-left {
   align-self: flex-start;
   /* <-- this is the fix */
   top: 150px;
+}
+footer .col-left #footerTitle {
+  display: none;
 }
 footer .col-left h2 {
   overflow: hidden;
