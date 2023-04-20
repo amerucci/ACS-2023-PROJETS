@@ -1,11 +1,12 @@
 .header {
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     padding: 30px;
     width: 100%;
     box-sizing: border-box;
     align-items:center;
+    z-index: 999;
  
 
     .logo {
@@ -16,10 +17,14 @@
     }
 
     .menu {
+        position:fixed;
+        z-index: 9999;
         width: 30px;
         height: 20px;
         display: block;
-        position: relative;
+       top:40px;
+       right:20px;
+       background: $black;
 
         .bar {
             width: 30px;

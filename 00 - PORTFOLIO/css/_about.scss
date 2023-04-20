@@ -61,7 +61,9 @@
                 }
 
             }
-
+            @media (max-width: 380px){
+                font-size: 12vw;
+            }
         }
 
         p {
@@ -70,6 +72,15 @@
             margin-top: 50px;
             margin-bottom: 50px;
             line-height: 30px;
+            @media (max-width: 380px){
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 380px){
+            position: relative;
+            top:0;
+            width:100%;
         }
     }
 
@@ -96,5 +107,18 @@
             }
             }
         }
+        @media (max-width: 380px){
+            position: relative;
+            top:0;
+            width:100%;
+            align-items: flex-start;
+        }
     }
+    @media (max-width: 380px){
+        flex-direction: column;
+        padding-top: 50px;
+        
+    }
+
+    
 }

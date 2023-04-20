@@ -12,7 +12,7 @@
     z-index: 1;
 
     .heroBackground {
-        position: absolute;
+        position: fixed;
         background: url(../images/background2.png);
         background-size: contain;
         background-position: center center;

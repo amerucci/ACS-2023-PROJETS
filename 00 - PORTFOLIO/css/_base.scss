@@ -1,4 +1,8 @@
-html{
+// *{
+//   box-shadow: 0 0 0 3px red inset;
+// }
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -14,19 +18,19 @@ body {
 .container-fluid {
     width: 98%;
     margin: auto;
-   
+
 }
 
-.container{
-    width:100%;
+.container {
+    width: 100%;
     padding: 40px;
     box-sizing: border-box;
 }
 
-.red{
-    color:$red;
+.red {
+    color: $red;
 }
 
-.show{
-    display:block!important;
+.show {
+    display: block !important;
 }

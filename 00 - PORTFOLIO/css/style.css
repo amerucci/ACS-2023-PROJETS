@@ -9,7 +9,7 @@ footer .col-left h2, #production h2, #about .col-left h2, .hero h1 {
 }
 
 footer .col-left h2 .stroke, #production h2 .stroke, #about .col-left h2 .stroke, .hero h1 .stroke {
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 0.2vw #fff;
   color: transparent;
 }
 
@@ -88,20 +88,25 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   padding: 30px;
   width: 100%;
   box-sizing: border-box;
   align-items: center;
+  z-index: 999;
 }
 .header .logo img {
   height: 50px;
 }
 .header .menu {
+  position: fixed;
+  z-index: 9999;
   width: 30px;
   height: 20px;
   display: block;
-  position: relative;
+  top: 40px;
+  right: 20px;
+  background: #1c1c1c;
 }
 .header .menu .bar {
   width: 30px;
@@ -143,7 +148,7 @@ body {
   z-index: 1;
 }
 .hero .heroBackground {
-  position: absolute;
+  position: fixed;
   background: url(../images/background2.png);
   background-size: contain;
   background-position: center center;
@@ -300,12 +305,29 @@ body {
   color: #DB162F;
   margin-left: 10px;
 }
+@media (max-width: 380px) {
+  #about .col-left h2 {
+    font-size: 12vw;
+  }
+}
 #about .col-left p {
   display: none;
   width: 70%;
   margin-top: 50px;
   margin-bottom: 50px;
   line-height: 30px;
+}
+@media (max-width: 380px) {
+  #about .col-left p {
+    width: 90%;
+  }
+}
+@media (max-width: 380px) {
+  #about .col-left {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
 }
 #about .col-right {
   width: 50%;
@@ -324,6 +346,20 @@ body {
   font-family: "squealerregular";
   font-size: 6vw;
   color: #DB162F;
+}
+@media (max-width: 380px) {
+  #about .col-right {
+    position: relative;
+    top: 0;
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 380px) {
+  #about {
+    flex-direction: column;
+    padding-top: 50px;
+  }
 }
 
 @font-face {
@@ -400,7 +436,7 @@ body {
 }
 #production h2:nth-child(2) span {
   animation-delay: 0.2s;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 0.2vw #fff;
 }
 #production h2:nth-child(3) span {
   animation-delay: 0.4s;
@@ -530,7 +566,7 @@ body {
   /* letter-spacing: 2vw; */
   line-height: initial;
   text-size-adjust: 80%;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 0.2vw #fff;
 }
 .sticky-container section .infos span span a {
   text-decoration: none;
@@ -546,7 +582,7 @@ body {
   /* letter-spacing: 2vw; */
   line-height: initial;
   text-size-adjust: 80%;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 0.2vw #fff;
 }
 .sticky-container section .infos span:nth-child(6) span {
   animation-delay: 0.2s;
@@ -567,7 +603,7 @@ body {
   animation-delay: 1.2s;
 }
 .sticky-container section:nth-child(even) h1 {
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 0.2vw #fff;
   color: transparent;
 }
 

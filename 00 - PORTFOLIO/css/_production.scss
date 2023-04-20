@@ -46,7 +46,7 @@
         &:nth-child(2) {
             span {
                 animation-delay: 0.2s;
-                -webkit-text-stroke: 2px $white;
+                -webkit-text-stroke: .2vw $white;
             }
         }
 
@@ -213,7 +213,7 @@
                     /* letter-spacing: 2vw; */
                     line-height: initial;
                     text-size-adjust: 80%;
-                    -webkit-text-stroke: 2px $white;
+                    -webkit-text-stroke: .2vw $white;
                     
 
                     a {
@@ -231,7 +231,7 @@
                         /* letter-spacing: 2vw; */
                         line-height: initial;
                         text-size-adjust: 80%;
-                        -webkit-text-stroke: 2px $white;
+                        -webkit-text-stroke: .2vw $white;
                         
                     }
                 }
@@ -280,7 +280,7 @@
     section:nth-child(even) h1 {
 
 
-        -webkit-text-stroke: 2px #fff;
+        -webkit-text-stroke: .2vw #fff;
         color: transparent;
 
     }
