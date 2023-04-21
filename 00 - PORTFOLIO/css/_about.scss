@@ -90,6 +90,20 @@
         flex-direction: column;
         align-items: center;
 
+        .swiper {
+            width: 100%;
+           
+            .swiper-slide {
+                width: 18.75rem;
+                height: 28.125rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: self-start;
+              
+              }
+          }
+
         .box {
             @extend%boxInfos;
            display: flex;
