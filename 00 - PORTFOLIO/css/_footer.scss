@@ -65,7 +65,9 @@ footer {
                 }
 
             }
-
+            @media (max-width: 767px) {
+                font-size: 12vw;
+              }
         }
 
         p {
@@ -75,6 +77,11 @@ footer {
             margin-bottom: 50px;
             line-height: 30px;
         }
+        @media (max-width: 767px) {
+            position: relative;
+            top: 0;
+            width: 100%;
+         }
     }
 
     .col-right {
@@ -223,6 +230,13 @@ footer {
 
         }
 
-
+        @media (max-width: 767px) {
+            position: relative;
+            top: 0;
+            width: 100%;
+         }
     }
+    @media (max-width: 767px) {
+       flex-direction: column;
+     }
 }

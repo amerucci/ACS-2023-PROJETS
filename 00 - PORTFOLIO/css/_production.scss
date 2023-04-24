@@ -1,6 +1,186 @@
+#swipperContainer {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    background: $black;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .swiperProd {
+
+        width: 100%;
+        overflow-x: hidden;
+
+
+        
+        .infos {
+            position: absolute;
+            bottom: 0;
+            display: none;
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+            height: 0;
+
+    @media (max-width: 767px) {
+      position: relative;
+      display: block;
+      height: auto;
+ 
+     }
+
+            .infosTechnos {
+                display: flex;
+                flex-direction: column;
+                line-height: 0;
+            }
+
+            .infosLink {
+                background: $red;
+            }
+
+            span {
+                overflow: hidden;
+                width: 100%;
+                height: 16.67vh;
+                @media (max-width: 767px) {
+                    overflow: hidden;
+                width: 100%;
+                height: 30px;
+
+               
+                   }
+               
+
+                span {
+                    display: inline-block;
+                    animation: textanimation .5s backwards;
+                    -webkit-animation: textanimation .5s backwards;
+                    font-size: 11px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    background: $black;
+                    display: flex;
+                    color: transparent;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    font-size: 3.6vw;
+                    font-weight: 900;
+                    /* letter-spacing: 2vw; */
+                    line-height: initial;
+                    text-size-adjust: 80%;
+                    -webkit-text-stroke: .2vw $white;
+
+
+                    a {
+                        text-decoration: none;
+                        color: transparent;
+                        text-decoration: none;
+
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 3.6vw;
+                        font-weight: 900;
+                        /* letter-spacing: 2vw; */
+                        line-height: initial;
+                        text-size-adjust: 80%;
+                        -webkit-text-stroke: .2vw $white;
+
+                    }
+                }
+
+                &:nth-child(6) {
+                    span {
+                        animation-delay: 0.2s;
+
+                    }
+                }
+
+                &:nth-child(5) {
+                    span {
+                        animation-delay: 0.4s;
+                    }
+                }
+
+                &:nth-child(4) {
+                    span {
+                        animation-delay: 0.6s;
+                    }
+                }
+
+                &:nth-child(3) {
+                    span {
+                        animation-delay: 0.8s;
+                    }
+                }
+
+                &:nth-child(2) {
+                    span {
+                        animation-delay: 1s;
+                    }
+                }
+
+                &:nth-child(1) {
+                    span {
+                        animation-delay: 1.2s;
+
+                    }
+                }
+            }
+        }
+    
+
+
+
+        .swiper-wrapper {
+            height: 100%;
+        }
+
+        .swiper-pagination-bullet {
+            background: $white;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $red;
+        }
+
+
+
+        .swiper-slide {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: self-start;
+            margin-bottom: 50px;
+            background: #1c1c1c;
+
+            .box {
+                display: block;
+                margin-bottom: 0;
+                width: 90%;
+            }
+
+        }
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+
+    }
+
+}
+
 #production {
 
-    
+
 
     color: $black;
     overflow: hidden;
@@ -26,6 +206,9 @@
         font-size: 8vw;
         text-align: center;
         color: $white;
+        @media (max-width: 767px) {
+            font-size: 12vw;
+         }
 
         span {
             display: inline-block;
@@ -53,9 +236,9 @@
         &:nth-child(3) {
             span {
                 animation-delay: 0.4s;
-                margin-bottom: 50px;
 
-               
+
+
             }
 
         }
@@ -131,7 +314,10 @@
 }
 
 .sticky-container {
+    display: block;
     margin-top: 100vh;
+    position: relative;
+    z-index: 3;
 
 
 
@@ -141,7 +327,12 @@
         position: sticky;
         top: 0;
         gap: 4px;
-        background:$black;
+        background: $black;
+
+        @media (max-width: 767px) {
+            display: none;
+
+        }
     }
 
     h1 {
@@ -214,7 +405,7 @@
                     line-height: initial;
                     text-size-adjust: 80%;
                     -webkit-text-stroke: .2vw $white;
-                    
+
 
                     a {
                         text-decoration: none;
@@ -232,14 +423,14 @@
                         line-height: initial;
                         text-size-adjust: 80%;
                         -webkit-text-stroke: .2vw $white;
-                        
+
                     }
                 }
 
                 &:nth-child(6) {
                     span {
                         animation-delay: 0.2s;
-                        
+
                     }
                 }
 
@@ -270,7 +461,7 @@
                 &:nth-child(1) {
                     span {
                         animation-delay: 1.2s;
-                        
+
                     }
                 }
             }
@@ -285,7 +476,9 @@
 
     }
 
-
+    @media (max-width: 767px) {
+        height: 100vh !important;
+    }
 
 }
 
@@ -300,6 +493,12 @@
 
     width: 100%;
     overflow: hidden;
+
+    @media (max-width: 767px) {
+       position: relative;
+       height:350px;
+
+    }
 
     img {
         height: 100%;
@@ -325,6 +524,3 @@ section:hover .infos {
     display: block;
     height: auto;
 }
-
-
-

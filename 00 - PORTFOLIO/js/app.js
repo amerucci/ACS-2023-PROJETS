@@ -41,7 +41,7 @@ window.addEventListener("scroll", function () {
             document.body.style = 'overflow:hidden';
             delay(2000)
         } else {
-            document.body.style = 'overflow:auto; overflow-x: hidden;';
+            document.body.style = 'overflow-y:auto; overflow-x: hidden!important;';
         }
 
     }
